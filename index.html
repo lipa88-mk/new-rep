@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События форм</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>События форм</h1>
+
+    <input class="name-field" type="text" placeholder="Имя">
+    <p class="hello"></p>
+
+    <hr>
+    <p>Введите грязную ЗП:</p>
+
+    <input class="salary-field" type="number" value="30000" min="10000" max="200000" step="1000">
+
+    <p class="salary-result">19500</p>
+
+    <hr>
+
+    <select class="select-list">
+        <option value="m">м</option>
+        <option value="w">ж</option>
+    </select>
+
+    <hr>
+
+    <input class="checkbox" type="checkbox" name="check"> М
+    <input class="checkbox" type="checkbox" name="check"> Ж
+    <input class="checkbox" type="checkbox" name="check"> Р
+
+    <hr>
+
+    <select class="filter" name="filter">
+        <option value="it">IT</option>
+        <option value="cats">Котики</option>
+        <option value="games">Игры</option>
+        <option value="events">События</option>
+        <option value="all" selected>Всё</option>
+    </select>
+
+    <!-- ul.news>li.news-item*10>lorem -->
+    <ul class="news">
+        <li class="news-item" data-category="it">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            quis iste neque
+            sequi voluptatem dolores tempore numquam placeat perspiciatis illo odio minus exercitationem at, voluptates
+            ullam aspernatur? Ut, molestiae amet.</li>
+
+        <li class="news-item" data-category="cats">Beatae, quam quo, iste cum rerum porro modi excepturi amet quasi
+            repellat
+            quidem delectus?
+            Eius minus porro nihil quam beatae perspiciatis ipsa veritatis ab saepe! Perspiciatis, quo! Neque, mollitia
+            libero.</li>
+
+        <li class="news-item" data-category="games">Est sint in illo minus sunt laborum tenetur neque aut cumque!
+            Reprehenderit dolores ea
+            vero quae delectus doloribus tempora magni inventore voluptatum perspiciatis a molestiae hic, reiciendis
+            autem similique commodi!</li>
+
+        <li class="news-item" data-category="it">Accusamus quam, saepe ex est quidem nostrum nam tenetur repellat culpa
+            voluptatem
+            inventore nihil iste facere omnis voluptatum earum perspiciatis nobis, reprehenderit ducimus? Eum quo,
+            cumque natus repellat ipsam voluptate!</li>
+
+        <li class="news-item" data-category="games">Minus nisi veniam consequatur, totam, autem exercitationem corporis
+            possimus, expedita
+            adipisci quibusdam atque nulla inventore ad ab hic labore optio unde id. Eveniet totam labore eum eaque
+            nulla vitae voluptate.</li>
+
+        <li class="news-item" data-category="events">A tenetur fuga alias aut suscipit, obcaecati quas, eaque eligendi
+            qui
+            vero nihil
+            voluptatem dolore expedita? Culpa officia a quisquam, quae nam magni nulla eligendi tempore, earum
+            consectetur repellendus ea.</li>
+
+        <li class="news-item" data-category="cats">Molestias fuga ratione eos excepturi quam, laudantium dignissimos
+            exercitationem eveniet
+            nisi vel, voluptatem harum cupiditate aspernatur ab corporis. Ad porro quidem iusto. Fuga dolorum architecto
+            consequatur laboriosam ea earum nesciunt!</li>
+
+        <li class="news-item" data-category="events">Similique tempora optio rerum rem nemo, repellat at officiis nam! A
+            suscipit facere sit
+            animi repudiandae adipisci beatae alias dicta? Ea nesciunt consequatur dicta non odio harum animi nobis
+            natus!</li>
+
+        <li class="news-item" data-category="games">Quis blanditiis excepturi aspernatur quod ad saepe optio iusto eaque
+            ea
+            minus, laboriosam
+            adipisci dicta facilis porro et eum officiis numquam. Culpa, praesentium aperiam. Deserunt reiciendis
+            explicabo ipsam commodi quae.</li>
+
+        <li class="news-item" data-category="cats">Error quasi minima praesentium sit odit! Voluptatum cupiditate
+            laborum
+            sed quidem illo
+            perferendis eligendi incidunt quibusdam ad beatae nulla voluptatem earum, nihil nemo possimus excepturi
+            labore dolorum vitae expedita facilis!</li>
+    </ul>
+
+
+    <hr>
+
+    <h2>Список дел</h2>
+
+    <ul class="todo">
+        <li class="todo-item">Сделать первым</li>
+    </ul>
+
+    <form class="add-todo">
+        Ваша задача:
+        <input class="todo-field" type="text"> <br>
+        <input class="todo-btn" type="submit">
+    </form>
+
+
+
+    <hr>
+
+    <form class="user">
+
+        Имя*: <input type="text" name="userName" required minlength="2" maxlength="30"> <br>
+        Фамилия: <input type="text" name="userSecondName"><br>
+        Отчество: <input type="text" name="userLastName" disabled><br>
+        Возраст: <input type="number" name="userAge" min="18" max="99"><br>
+        Почта*: <input type="email" name="userEmail" required><br>
+        Пол: <select name="userGender">
+            <option value="man" selected>муж</option>
+            <option value="woman">жен</option>
+        </select> <br>
+        <input type="checkbox" name="adv" checked required> Рассылка рекламы
+        <br>
+        <input type="submit">
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

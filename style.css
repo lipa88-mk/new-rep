@@ -1,0 +1,27 @@
+.news-item[data-category="it"] {
+    background-color: rgb(176, 211, 250);
+}
+
+.news-item[data-category="cats"] {
+    background-color: rgb(250, 176, 246);
+}
+
+.news-item[data-category="games"] {
+    background-color: rgb(250, 185, 176);
+}
+
+.news-item[data-category="events"] {
+    background-color: rgb(178, 250, 176);
+}
+
+.hidden {
+    display: none;
+}
+
+/* [name="userName"]:invalid {
+    background-color: green; 
+} */
+
+.invalid-field {
+    background-color: brown;
+}
